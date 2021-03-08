@@ -1,0 +1,81 @@
+body
+{
+	background-color: white;
+}
+header
+{	
+	top: 0px;
+	float: unset;
+	text-align: center;
+	position: fixed;
+	font-family: "comic sans ms";
+	display:block;
+	height:125px;
+	width:100%;
+	background-color: #d5f4e6;
+
+	
+}
+p{	margin-top: 180px;
+	padding-top: 200px;
+	color: white;
+	font-size: xx-large;
+	display: block;
+	text-align:right;
+	font-family: "comic sans ms";
+	background-image: url('../images/mii.jpeg');
+	border-image: 20px;
+	height: 700px
+  	background-repeat: no-repeat;
+  	
+  	background-size: 100% 99%;
+	
+
+}
+
+h1{
+	font-size: 65px;
+	text-align: center;
+}
+div.head
+{   display: inline-block;
+	border-radius: 25%;
+	height:10px;
+	width :10px;
+	position: fixed;
+	right: 50px;
+	float: right;
+	
+	
+}
+div.head2
+{   display: inline-block;
+	border-radius: 25%;
+	height:10px;
+	width :10px;
+	position: fixed;
+	right: 150px;
+	float: right;
+	
+	
+}
+img{
+	height:50px;
+	width:50px;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	
+}
+
+#myvideo.fullscreen { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+}

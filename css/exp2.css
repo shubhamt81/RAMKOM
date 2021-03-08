@@ -1,0 +1,26 @@
+header
+{
+	
+	text-align: center;
+	margin: auto;
+	padding-top: 10px;
+	vertical-align: middle;
+	font-family: "comic sans ms";
+	width: 100%;
+	color: white;
+	background-color: green;
+	display: inline-block;
+	border-radius: 20px;
+	height: 35px;
+	width: 85%;
+	font-style:italic;
+	
+}
+img 
+{
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	float: right;
+	margin: 2px;
+}

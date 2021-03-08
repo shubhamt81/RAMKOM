@@ -1,0 +1,32 @@
+header
+{
+	
+	text-align: center;
+	font-family: "comic sans ms";
+	width: 100%;
+	color: #F08080;
+}
+
+form
+{	top: 200px;
+	text-align: center;
+	height: 30vh;
+	color: #FFFFFF;
+}
+button{
+	position: center;
+	text-align: center;
+	text-decoration-style:  none;
+	text-decoration-color: #FFFFFF;
+}
+p{	
+	top: 200px;
+	text-align: center;
+	line-height: 50px;
+}
+body{background-image: url('../images/candy_shot_4x.jpeg');
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}

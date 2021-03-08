@@ -1,0 +1,25 @@
+
+.piechart { 
+        margin-top: 10px; 
+        display:inline-block;; 
+        width: 200px; 
+        height: 200px;
+        border-radius: 90%; 
+        background-image: conic-gradient( 
+            pink 70deg,  
+            lightblue 0 235deg,  
+            orange 0);
+        text-align: center;
+
+    } 
+  
+
+    
+h1{
+    background-color: red;
+    text-align: center;
+}
+body{
+    text-align: center;
+    font-family: "comic sans ms";
+}
