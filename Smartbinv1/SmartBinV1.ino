@@ -1,3 +1,10 @@
+/*
+Smart Bin
+Features: 
+1)Read height of Garbage pile and send to remote database.
+2)Auto-opening of Lid: Check distance of user, compare with threshold and open using servo
+*/
+
 #include <FirebaseESP8266.h>
 #include <FirebaseESP8266HTTPClient.h>
 #include <FirebaseFS.h>
@@ -22,15 +29,14 @@ const int echoPin1 = 5;//D1
 const int trigPin2 = 2;//D4 Or GPIO-2 of nodemcu
 const int echoPin2 = 0;//D3 Or GPIO-0 of nodemcu
 
-
+const int servoPin = 15;
 //Measure level of garbage pile
 int levelMeasure(int, int);
 void distanceMeasure(int, int);
 
 void setup() 
 {
-    // put your setup code here, to run once:
-      myservo.attach(15);//D8
+      myservo.attach(servoPin);
       
       pinMode(trigPin1,OUTPUT);
       pinMode(echoPin1,INPUT);
@@ -63,10 +69,11 @@ void setup()
 void loop() 
 {
   // put your main code here, to run repeatedly:
-      long level = levelMeasure(trigPin1, echoPin1);
+      long level = levelMeasure(trigPin1, echoPin1);//Measure height of Pile using ultrasonic 1.
 
-      distanceMeasure(trigPin2, echoPin2);
-    
+      distanceMeasure(trigPin2, echoPin2);//Check if user nearby. Open if yes.
+
+    //Send height to firebase
       if (Firebase.setInt(firebaseData, "/data", level)) 
       {    
         // On successful Write operation, function returns 1  
@@ -82,6 +89,7 @@ void loop()
       delay(1000);
 }
 
+//Function to measure distance using ultrasonic
 int levelMeasure(int trigPin, int echoPin)
 {
     static int distance;
@@ -102,14 +110,23 @@ int levelMeasure(int trigPin, int echoPin)
     return distance; 
 }
 
+//Function to open lid if user nearby
 void distanceMeasure(int trigPin, int echoPin)
 {
     long dist = levelMeasure(trigPin, echoPin);
     Serial.println(dist);
+
     if (dist < 27)
     {
-      myservo.write(pos+160);
-      delay(1000);
-      myservo.write(pos-160);
+      myservo.write(pos+160);//Open lid
+      
+      //Check if user is away every second
+      do 
+      {
+          delay(1000);
+          dist = levelMeasure(trigPin, echoPin);
+          }
+      while(dist<27);
+      myservo.write(pos-160);//Close if no user in front of bin
     }
 }
