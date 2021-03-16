@@ -2,7 +2,6 @@ body{
 	background-size: 100% 100%;
 	background-image: url('../images/bg3.jpeg');
 	background-repeat: no-repeat;
-
 }
 div.ds{		
 	margin:70px;
@@ -19,8 +18,9 @@ div.ds{
 	color: white
 }
 #head{
+    
 	text-decoration: none;
-	padding-left: 41%;
+	padding-left: 35%;
 	display: inline-block;
 	text-align: center;
 	font-family: "comic sans ms";
@@ -38,7 +38,7 @@ img{
 
 }
 img.hwo:hover {
-	size: 200%;
+	size: 125%;
 	height: 90px;
 	width: 90px;
 	box-shadow: 10px 10px 5px grey;
@@ -52,7 +52,7 @@ a{	font-size: 40px;
 a.ho:hover{
 	color: #f7703d;
 	text-decoration: none;
-	font-size: 60px;
+	font-size: 50px;
 	text-shadow: 10px 10px 5px grey;
 }
 label{
@@ -60,7 +60,7 @@ label{
 	font-size: large;
 }
 
-form
+div.cl
 {	
 	margin-top: 50px;
 	font-size: large;
@@ -85,9 +85,7 @@ p{
 	height:5px;
 	border-radius: 4px;
 }
-#fname{
-	color: pink;
-}
+
 button{
 	font-size: 15px;
 	border-radius: 5px;

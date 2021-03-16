@@ -1,0 +1,127 @@
+body{
+	background-size: 100% 100%;
+	background-image: url('../images/bg3.jpeg');
+	background-repeat: no-repeat;
+}
+div.ds{		
+	margin:70px;
+	height:76.5vh;
+	border: 2px solid black;
+	background-image: url('../images/cbg3.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	box-shadow: 10px 10px 5px grey;
+	
+	
+	border-radius: 30px;
+
+	color: white
+}
+#head{
+    
+	text-decoration: none;
+	padding-left: 35%;
+	display: inline-block;
+	text-align: center;
+	font-family: "comic sans ms";
+	color: orange;
+}
+img{
+	float: right;
+	display: inline-block;
+	height: 45px;
+	width: 45px;
+	color:red;
+	border-radius: 1px solid white;
+	
+	margin: 5px;
+
+}
+img.hwo:hover {
+	size: 105%;
+	height: 55px;
+	width: 55px;
+	box-shadow: 10px 10px 5px grey;
+	border-radius: 3px;
+}
+a{	font-size: 40px;
+	color: rgb(233, 190, 233);
+	text-decoration-color: orange;
+	text-decoration: none;
+}
+a.ho:hover{
+	color: #f7703d;
+	text-decoration: none;
+	font-size: 50px;
+	text-shadow: 10px 10px 5px grey;
+}
+
+div.lp{
+    display: inline-block;
+    font-family: "comic sans ms";
+    
+    font-size: 18px;
+    background-color: rgba(196, 215, 255, 0.973);
+    float: left;
+    opacity: 50%;
+    height: 300px;
+    width:200px;
+    border: 2px solid black;
+    margin:5px;
+    padding: 5px;
+	font-size: 40px;
+	text-align: center;
+    color: black;
+    border-radius: 30px;
+}
+button{
+	font-size: 45px;
+	border-radius: 20px;
+}
+button.nl{
+	font-size:25px ;
+	border-radius: 30px;
+}
+button.nl:hover{
+	color:white;
+	background-color: red;
+	
+}
+
+div.mp{
+    display: inline-block;
+    font-family: "comic sans ms";
+    
+    font-size: 18px;
+    background-color: rgba(196, 215, 255, 0.973);
+    
+    opacity: 60%;
+    height: 300px;
+    width:200px;
+    border: 2px solid black;
+    margin:5px;
+    padding: 5px;
+	font-size: 35px;
+	text-align: center;
+    color: black;
+    border-radius: 30px;
+}
+div.rp{
+    display: inline-block;
+    font-family: "comic sans ms";
+    float: right;
+    font-size: 18px;
+    background-color: rgba(196, 215, 255, 0.973);
+    
+    opacity: 60%;
+    height: 300px;
+    width:600px;
+    border: 2px solid black;
+    margin:5px;
+    padding: 5px;
+	font-size: 15px;
+	text-align: center;
+    color: black;
+    border-radius: 30px;
+}
+

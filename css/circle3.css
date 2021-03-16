@@ -1,24 +1,59 @@
 
 body{
-  
-  background-image: url('../images/bgs.jpeg');
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: 100% 100%;
+  background-image: url('../images/bg3.jpeg');
+  background-repeat: no-repeat;
+}
+div.ds{   
+  margin:70px;
+  height:76.5vh;
+  border: 2px solid black;
+  background-image: url('../images/bgs2.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 10px 10px 5px grey;
+  
+  
+  border-radius: 30px;
+
+  color: white
+}
+#head{
+  text-decoration: none;
+  padding-left: 35%;
+  display: inline-block;
+  text-align: center;
+  font-family: "comic sans ms";
+  color: orange;
+}
+img{
+  float: right;
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  color:red;
+  border-radius: 1px solid white;
+  
+  margin: 5px;
 
 }
-
-header
-{
-  
-  text-align: center;
-  font-size: x-large;
-  font-family: "comic sans ms";
-  height:100px;
-  width:100%;
-  color: #1028fc;
-  background-color: #cd093661 ;
+img.hwo:hover {
+  size: 200%;
+  height: 90px;
+  width: 90px;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 3px;
+}
+a{  font-size: 40px;
+  color: white;
+  text-decoration-color: orange;
+  text-decoration: none;
+}
+a.ho:hover{
+  color: pink;
+  text-decoration: none;
+  font-size: 60px;
+  text-shadow: 10px 10px 5px grey;
 }
 
 
@@ -86,9 +121,10 @@ header
   width: 100%;
   z-index: 1;
   left: 0;
-  top: 0;
+  top: 2em;
   width: 5em;
-  line-height: 5em;
+ 
+  line-height: 1em;
   font-size: 0.2em;
   color: #cccccc;
   display: block;
@@ -844,8 +880,9 @@ header
   cursor: default;
 }
 .c100:hover > span {
+  top: 1em;
   width: 3.33em;
-  line-height: 3.33em;
+  line-height: 1em;
   font-size: 0.3em;
   color: #307bbb;
 }
@@ -895,3 +932,39 @@ header
 .c100.orange.dark:hover > span {
   color: #e08833;
 }
+
+
+
+
+div.lp{
+  display: inline-block;
+  color: bisque;
+  float: left;
+  text-align: center;
+  height: 250px;
+  width:400px;
+  font-family: "comic sans ms";
+  margin-left: 20px;
+  font-size: 100px;
+  border: 2px solid black;
+  padding-left: 30px;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 20px;
+}
+div.rp{
+  display: inline-block;
+  font-family: "comic sans ms";
+  color: black;
+  font-size: 18px;
+  background-color: rgba(196, 215, 255, 0.973);
+  float: right;
+  opacity: 80%;
+  height: 250px;
+  width:500px;
+  border: 1px solid black;
+  margin-right: 20px;
+  padding: 5px;
+  
+  border-radius: 30px;
+}
+

@@ -121,9 +121,10 @@ a.ho:hover{
   width: 100%;
   z-index: 1;
   left: 0;
-  top: 0;
+  top: 2em;
   width: 5em;
-  line-height: 5em;
+ 
+  line-height: 1em;
   font-size: 0.2em;
   color: #cccccc;
   display: block;
@@ -879,8 +880,9 @@ a.ho:hover{
   cursor: default;
 }
 .c100:hover > span {
+  top: 1em;
   width: 3.33em;
-  line-height: 3.33em;
+  line-height: 1em;
   font-size: 0.3em;
   color: #307bbb;
 }
@@ -930,3 +932,6 @@ a.ho:hover{
 .c100.orange.dark:hover > span {
   color: #e08833;
 }
+
+
+
