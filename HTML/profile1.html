@@ -3,31 +3,44 @@
 <head>
 	<title>Your Profile</title>
 	<link rel="stylesheet" href="../css/sheet2.css">
+
+	<!------these are for firebase-->
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+	
+
 </head>
 <body>
 	<div class=ds>
-	<header><h1 id="head"><a href="main.html" class="ho">Ramkom</a></h1>
+	<header><h1 id="head"><a href="../index.html" class="ho">Ramkom</a></h1>
 	<a href="profile1.html"><img  src="../images/i4.png" class="hwo"></a>
 	<a href="cart.html"  ><img  src="../images/i3.png" class="hwo"></a>
 	
-	<a href="info_tab.html" ><img  src="../images/i2.png" class="hwo"></a>
+	<a href="trial3.html" ><img  src="../images/i2.png" class="hwo"></a>
 	<img src="../images/i1.png" class="hwo">
 	</header>
 
 	
 		<div class="in">
-			<form id="in" method="post" action="/php/user_name.php">
+			<div class="cl">
 	
-				<label for="fname">First name:</label>
-  				<input name="fname" type="text" id="fname" placeholder="fname"><br><br>
-  				<label for="vmail">Mail address:</label>
-  				<input type="email" id="vmail" name="vmail"><br><br>
-  				<label for="submit" class="form-conrol submit" ><button>Submit</button> 
-  				<label for="login"><a href="profile.html" id="bt"><button>Log in</button></a></label>
-  
-			</form>
-		</div>
+				<label for="fname">Name:</label>
+  				<input name="fname" type="text" id="name" placeholder="Your name" required><br><br>
+  				<label for="mail">Mail address:</label>
+  				<input type="mail" id="mail" name="mail" placeholder="iamthebest@domain.com" required><br><br>
+				<label for="ref">Reference number:</label>
+  				<input type="password" id="ref" name="refrence" placeholder="ref no." required><br><br>
 
+  				<button class="lg" id="l">login</button>
+  				
+				  <script src="../JS/sketch24.js"></script>
+			</div>
+		</div>
+		
 	</div>
 </body>
 </html>

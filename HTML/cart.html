@@ -2,14 +2,48 @@
 <html lang="en">
 <head>
 	<title>Your cart</title>
-	<link rel="stylesheet" href="../css/sheet1.css">
+	<link rel="stylesheet" href="../css/sheet11.css">
+	<!------these are for firebase-->
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	
 </head>
 <body>
-	<header><h1>SO WHAT ARE YOU WAITING FOR???</h1></header>
-	<p>
-		Be the part of the future and join us in this journey!All set??Click on the join button!!!
-    </p>
-    <p> Place your order and our executives will you contact soon !<p>
-    <button>Continue</button>
+	<div class=ds>
+	<header><h1 id="head"><a href="../index.html" class="ho">Ramkom</a></h1>
+		<a href="profile1.html"><img  src="../images/i4.png" class="hwo"></a>
+		<a href="cart.html"  ><img  src="../images/i3.png" class="hwo"></a>
+		
+		<a href="trial3.html" ><img  src="../images/i2.png" class="hwo"></a>
+		<a href="about.html" ><img src="../images/i1.png" class="hwo"></a></header>
+
+		<div class="lp">
+			<b >Smart bin</b>
+			<br>Price = Rs.1410</br>
+			<button id="add">+</button ><button id="q"> .... </button><button id="sub">-</button><br>
+			<button class="nl" id="a">ADD TO CART</button>
+			
+		</div>
+		<div class="mp">
+			<b>CART</b><br>
+			Total price to pay RS=<button id="p">....</button><br>
+			<button class="nl" id="b">BUY</button>
+		</div>
+		<div class="rp">
+			Name <input id="namebox" type ="text" required></input><br><br>
+			Email<input id="mail" type="text" required></input><br><br>
+			UTR<input id="pay" type ="text" required></input><br><br>
+			Address<input id="ad" type="text" required></input><br><br>
+			<br><br>
+			<button class="nl" id="po">Place order</button>
+		</div>
+	
+	</div>
+	<script src="../JS/xcript15.js"></script>
 </body>
 </html> 
