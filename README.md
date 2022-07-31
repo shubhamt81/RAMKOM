@@ -1,7 +1,24 @@
 # RAMKOM
 
-
-
+<h3>About</h3>
+It is a real-time data collecting website that fetches data from
+the smart-bin and displays it to the user.
+It has various features like auto-email confirmation and
+account verification.
+<br><br>
+<h3>HTML</h3>
+HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is the combination of Hypertext and Markup language. Hypertext defines the link between web pages. A markup language is used to define the text document within the tag which defines the structure of web pages. This language is used to annotate (make notes for the computer) text so that a machine can understand it and manipulate text accordingly. Most markup languages (e.g. HTML) are human-readable. The language uses tags to define what manipulation has to be done on the text. 
+<br><br>
+<h3>CSS</h3>
+Cascading Style Sheet(CSS) is used to set the style in web pages that contain HTML elements. It sets the background color, font-size, font-family, color, … etc property of elements on a web page. 
+There are three types of CSS which are given below: 
+<br>Inline CSS
+<br>Internal or Embedded CSS
+<br>External CSS
+<br><br>
+<h3>Javascript</h3>
+JavaScript is a lightweight, cross-platform, and interpreted compiled programming language which is also known as the scripting language for webpages. It is well-known for the development of web pages, many non-browser environments also use it. JavaScript can be used for Client-side developments as well as Server-side developments. Javascript is both imperative and declarative type of language. JavaScript contains a standard library of objects, like Array, Date, and Math, and a core set of language elements like operators, control structures, and statements. 
+<br><br>
 <h3>Firebase</h3>
 Firebase is a product of Google which helps developers to build, manage, and grow their apps easily. 
 It helps developers to build their apps faster and in a more secure way. No programming is required 
@@ -10,8 +27,6 @@ to android, ios, web, and unity. It provides cloud storage. It uses NoSQL for th
 storage of data.
 Features of Firebase:
 Mainly there are 3 categories in which firebase provides its services.
-
-
 
 Build better applications
 This feature mainly includes backend services that help developers to build and manage their applications in a better way. Services included under this feature are :
@@ -38,5 +53,5 @@ Firebase Cloud Messaging(FCM): The FCM service provides a connection between the
 
 ![image](https://user-images.githubusercontent.com/74250237/182012198-2ce00fca-e726-4301-bc61-0a24291670a8.png)
 
-Technologies used-> Firebase,HTML,CSS,JS
+Technologies used-> Firebase,HTML,CSS,JS<br>
 Site->https://pbl-tiem.web.app/
